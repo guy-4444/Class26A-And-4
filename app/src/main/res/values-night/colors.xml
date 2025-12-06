@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dark Mode colors file: -->
+<resources>
+    <!-- Primary brand (dark) -->
+    <color name="colorPrimary">#FFB4A0</color>
+    <color name="colorOnPrimary">#601410</color>
+    <color name="colorPrimaryContainer">#872100</color>
+    <color name="colorOnPrimaryContainer">#FFD8CC</color>
+
+    <!-- Secondary accent (dark) -->
+    <color name="colorSecondary">#B0CCD3</color>
+    <color name="colorOnSecondary">#1C3338</color>
+    <color name="colorSecondaryContainer">#324B52</color>
+    <color name="colorOnSecondaryContainer">#CCE7EB</color>
+
+    <!-- Tertiary accent (dark) -->
+    <color name="colorTertiary">#C0C2FF</color>
+    <color name="colorOnTertiary">#2E1788</color>
+    <color name="colorTertiaryContainer">#42406F</color>
+    <color name="colorOnTertiaryContainer">#E3DAFF</color>
+
+    <!-- Error (dark) -->
+    <color name="colorError">#FFB4AB</color>
+    <color name="colorOnError">#690005</color>
+    <color name="colorErrorContainer">#93000A</color>
+    <color name="colorOnErrorContainer">#F9DEDC</color>
+
+    <!-- Background & Surface (dark) -->
+    <color name="colorBackground">#1C1B1F</color>
+    <color name="colorOnBackground">#E6E1E5</color>
+    <color name="colorSurface">#1C1B1F</color>
+    <color name="colorOnSurface">#E6E1E5</color>
+    <color name="colorSurfaceVariant">#49454F</color>
+    <color name="colorOnSurfaceVariant">#CAC4D0</color>
+
+    <!-- Outline & Inverse roles (dark) -->
+    <color name="colorOutline">#938F99</color>
+    <color name="colorInverseOnSurface">#1C1B1F</color>
+    <color name="colorInverseSurface">#E6E1E5</color>
+    <color name="colorInversePrimary">#FF6B35</color>
+
+    <!-- Surface Tint (dark) -->
+    <color name="colorSurfaceTint">#FFB4A0</color>
+</resources>

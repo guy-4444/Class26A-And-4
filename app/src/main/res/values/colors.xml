@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary brand -->
+    <color name="colorPrimary">#FF6B35</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorPrimaryContainer">#FFD8CC</color>
+    <color name="colorOnPrimaryContainer">#370B00</color>
+
+    <!-- Secondary accent -->
+    <color name="colorSecondary">#4C727F</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorSecondaryContainer">#CCE7EB</color>
+    <color name="colorOnSecondaryContainer">#001F24</color>
+
+    <!-- Tertiary accent -->
+    <color name="colorTertiary">#5A5F8F</color>
+    <color name="colorOnTertiary">#FFFFFF</color>
+    <color name="colorTertiaryContainer">#E3DAFF</color>
+    <color name="colorOnTertiaryContainer">#21005D</color>
+
+    <!-- Error -->
+    <color name="colorError">#B3261E</color>
+    <color name="colorOnError">#FFFFFF</color>
+    <color name="colorErrorContainer">#F9DEDC</color>
+    <color name="colorOnErrorContainer">#410E0B</color>
+
+    <!-- Background & Surface -->
+    <color name="colorBackground">#FFFBFE</color>
+    <color name="colorOnBackground">#1C1B1F</color>
+    <color name="colorSurface">#FFFBFE</color>
+    <color name="colorOnSurface">#1C1B1F</color>
+    <color name="colorSurfaceVariant">#E7E0EC</color>
+    <color name="colorOnSurfaceVariant">#49454F</color>
+
+    <!-- Outline & Inverse roles -->
+    <color name="colorOutline">#79747E</color>
+    <color name="colorInverseOnSurface">#F4EFF4</color>
+    <color name="colorInverseSurface">#313033</color>
+    <color name="colorInversePrimary">#FFB4A0</color>
+
+    <!-- Surface Tint (used by M3 for colored shadows, etc.) -->
+    <color name="colorSurfaceTint">#FF6B35</color>
+
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
