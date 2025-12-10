@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SimpleLineGraphView">
+        <!-- Color of the line/track -->
+        <attr name="trackColor" format="color" />
+        
+        <!-- Color of the thumb indicator -->
+        <attr name="thumbColor" format="color" />
+        
+        <!-- Color of the thumb border -->
+        <attr name="thumbBorderColor" format="color" />
+        
+        <!-- Color for the gradient fill below the line (defaults to trackColor) -->
+        <attr name="gradientColor" format="color" />
+        
+        <!-- Width of the line stroke -->
+        <attr name="lineWidth" format="dimension" />
+        
+        <!-- Radius of the thumb circle -->
+        <attr name="thumbRadius" format="dimension" />
+        
+        <!-- Width of the thumb border -->
+        <attr name="thumbBorderWidth" format="dimension" />
+        
+        <!-- Smoothing factor for curves (0-0.5) -->
+        <attr name="smoothingFactor" format="float" />
+        
+        <!-- Enable touch interaction -->
+        <attr name="touchEnabled" format="boolean" />
+    </declare-styleable>
+</resources>

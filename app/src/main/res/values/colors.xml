@@ -42,6 +42,9 @@
     <color name="colorSurfaceTint">#FF6B35</color>
 
 
+    <color name="textPrimary">#3C3C3C</color>
+    <color name="textSecondary">#979797</color>
+
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>

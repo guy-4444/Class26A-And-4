@@ -68,7 +68,6 @@ class MainActivity : AppCompatActivity() {
 
         val json = MSPV3.getInstance().readString("DB")
         var myDataAfter: GamaData = Gson().fromJson(json, GamaData::class.java)
-
     }
 
     fun gameEnded(score: Int) {

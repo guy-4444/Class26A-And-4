@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".DashboardActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#808080"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:strokeWidth="0dp"
+                app:cardCornerRadius="28dp"
+                android:layout_marginTop="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    android:background="#fceee9">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/lblDailyActivityTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_toStartOf="@id/layPrgActivity"
+                        android:layout_alignParentStart="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="Daily activity"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/lblDailyActivity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_toStartOf="@id/layPrgActivity"
+                        android:layout_below="@id/lblDailyActivityTitle"
+                        android:textSize="14sp"
+                        android:text="Daily activity long description bla bla 70% bla bla bla"/>
+
+                    <RelativeLayout
+                        android:id="@+id/layPrgActivity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        >
+
+                        <com.google.android.material.progressindicator.CircularProgressIndicator
+                            android:id="@+id/prgActivity"
+                            style="@style/Widget.Material3.CircularProgressIndicator.Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:indicatorDirectionCircular="counterclockwise"
+                            app:trackColor="#ffffff"
+                            app:trackThickness="6dp"
+                            app:indicatorSize="80dp"
+                            app:indicatorTrackGapSize="2dp"
+                            android:progress="40"/>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/lblPrgActivity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/colorPrimary"
+                            android:text="00%"/>
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="28sp"
+                android:textColor="#202020"
+                android:text="Health metrics"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="28dp"
+                        app:cardElevation="0dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:padding="16dp">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                app:iconSize="14dp"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:layout_alignParentEnd="true"
+                                android:backgroundTint="#ffc701"
+                                app:icon="@drawable/ic_heart"
+                                app:iconGravity="textStart"
+                                app:iconPadding="0dp"
+                                android:gravity="center"
+                                android:visibility="gone"/>
+
+                            <RelativeLayout
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_alignParentEnd="true">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/ic_circle"
+                                    app:tint="#ffc701"
+                                    />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:padding="8dp"
+                                    app:srcCompat="@drawable/ic_heart"
+                                    app:tint="#ffffff"
+                                    />
+
+                            </RelativeLayout>
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/lblHeartRateTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Heart rate"
+                                android:textColor="@color/textPrimary"
+                                android:textSize="16sp" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/lblHeartRate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/lblHeartRateTitle"
+                                android:layout_marginTop="16dp"
+                                android:textColor="@color/textPrimary"
+                                android:textStyle="bold"
+                                android:textSize="24sp"
+                                android:text="000" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@id/lblHeartRate"
+                                android:layout_marginStart="4dp"
+                                android:layout_toEndOf="@id/lblHeartRate"
+                                android:paddingBottom="3dp"
+                                android:textColor="@color/textSecondary"
+                                android:textSize="12sp"
+                                android:text="BPM" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/lblHeartRateDesc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/lblHeartRate"
+                                android:layout_marginTop="4dp"
+                                android:textColor="@color/textSecondary"
+                                android:textSize="12sp"
+                                android:text="Description" />
+
+
+                        </RelativeLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="28dp"
+                        app:cardElevation="0dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                app:iconSize="14dp"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                android:layout_alignParentEnd="true"
+                                android:backgroundTint="#ffc701"
+                                app:icon="@drawable/ic_heart"
+                                app:iconGravity="textStart"
+                                app:iconPadding="0dp"
+                                android:gravity="center"
+                                android:visibility="gone"/>
+
+                            <RelativeLayout
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_margin="16dp"
+                                android:layout_alignParentEnd="true">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:srcCompat="@drawable/ic_circle"
+                                    app:tint="#86D3D1"
+                                    />
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:padding="8dp"
+                                    app:srcCompat="@drawable/ic_heart"
+                                    app:tint="#ffffff"
+                                    />
+
+                            </RelativeLayout>
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/lblStepsTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginStart="16dp"
+                                android:text="Steps"
+                                android:textColor="@color/textPrimary"
+                                android:textSize="16sp" />
+
+                            <com.guy.class26a_and_4.SimpleLineGraphView
+                                android:id="@+id/spcGraph"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_below="@id/lblStepsTitle"
+                                app:trackColor="#2DB3A0"
+                                app:thumbColor="#2DB3A0"
+                                app:thumbBorderColor="@android:color/white"
+                                app:gradientColor="#2DB3A0"
+                                app:lineWidth="2dp"
+                                app:thumbRadius="8dp"
+                                app:thumbBorderWidth="4dp"
+                                app:smoothingFactor="0.2"
+                                app:touchEnabled="true" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/lblSteps"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignStart="@id/lblStepsTitle"
+                                android:layout_below="@id/spcGraph"
+                                android:layout_marginTop="4dp"
+                                android:textColor="@color/textPrimary"
+                                android:textStyle="bold"
+                                android:textSize="24sp"
+                                android:text="000" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@id/lblSteps"
+                                android:layout_marginStart="4dp"
+                                android:layout_toEndOf="@id/lblSteps"
+                                android:paddingBottom="3dp"
+                                android:textColor="@color/textSecondary"
+                                android:textSize="12sp"
+                                android:text="BPM" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/lblStepsDesc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignStart="@id/lblStepsTitle"
+                                android:layout_marginBottom="16dp"
+                                android:layout_below="@id/lblSteps"
+                                android:layout_marginTop="4dp"
+                                android:textColor="@color/textSecondary"
+                                android:textSize="12sp"
+                                android:text="Description" />
+
+
+                        </RelativeLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -40,6 +40,8 @@
 
         <item name="android:windowBackground">@color/colorSurface</item>
 
+        <item name="android:fontFamily">@font/futura_now_text_regular</item>
+
     </style>
 
     <style name="Theme.Class26AAnd4" parent="Base.Theme.Class26AAnd4" />
